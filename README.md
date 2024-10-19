@@ -1,69 +1,26 @@
-# Handlit - 90's Kids
+# Handlit
+수습 운전자를 위한 운전 시뮬레이션 앱
 
-### dev Period : 2021.05.21 ~ 2021.05.23 
+|지도|운전 경로|경로 추천|비디오|
+|--------|-----|------------|------------|
+|<img width = "200" src = "https://github.com/user-attachments/assets/d766d7a2-5709-486e-8522-f23c5738ffcb">|<img width = "200" src = "https://github.com/user-attachments/assets/f40388ff-40a9-45e0-9bba-3141b2e29e86">|<img width = "200" src = "https://github.com/user-attachments/assets/27a63a70-aecb-4c4e-8e09-0c02a043f853">|<img width = "200" src = "https://github.com/user-attachments/assets/d34a418f-71e0-4de2-b513-286d9149f1a6">|
 
+## 프로젝트 환경
+- 인원: iOS 2인, 서버 1인, 디자인 1인, 기획 1인
+- 기간: 2021.05.21 - 2021.05.23
+- 최소버전: iOS 14+ 
 
-
-## 🟢 Concept
-
----
-
-Handlit - Driving simulation service for probationary drivers
-
-## 💭 Barrier-Free as we thought
-
----
-
-In order to build a mature society where all citizens can naturally participate in society (each life of work, family, community), reducing and removing physical and psychological barriers that hinder participation. 
-Something that can be enjoyed or used without difficulty(barrier) for both persons with disabilities and non-disabilities.
-
-## 🌱 Target
-
----
-
-Person who feel the barrier about New thing or something unfamiliar.
-and who have temporal physically barrier.
-(a person who has not had much time to get a license, a person who has a FOB, or a person who does not have enough time to go to driving training)
-
-## 🤔 Challenges that Targets face
-
----
-
-According to the "Study on Policy Measures to Reduce Beginner Driver Accidents" published by the Traffic Climate Environment Research Institute, novice drivers have the highest accident rate (39.6%) in their first year of driving. The 100th day from the start date of driving was analyzed as the most dangerous time.
-Only 36.4% of drivers get a driver's license and drive right away. 22% started driving a year later, and even 18% of drivers first started driving five years later after they got license.
-
-- It's hard to get to a driving place or to make a time.
-- Get out of the road in a mental strain on directly.
-
-## ✍️ User Scenario
-
----
-
-User A / 29 years old 
-
-It has been several years since 'User A' obtained his license, but he has little experience in driving. He searched about a driving training academy to escape FOB. Seeing reviews that he only lost money by learning from unfriendly or inexperienced instructors, He worried that he will be like that. 'User A' founded `Handlit` app. He wants to know if the road near his house is crowded. After choosing the starting point and destination, one learns the driving sense by watching the streamed screen.
-
-## ☝️ Main features
-
----
-
-- Streaming driving movie on the route user choose.
-- Select driving conditions (weather, day and night, etc.)
-- Display of driving information (hour, left, right, etc.)
-
-## 👩‍🎨 Branding
-
----
-
-![branding](https://user-images.githubusercontent.com/25509153/119248636-690bc180-bbcd-11eb-8442-ae1448a9e33a.png)
-
-
-## 🧙‍♀️ UI Design
-
----
-
-<img width="800" alt="wireframe" src="https://user-images.githubusercontent.com/25509153/119248475-5c3a9e00-bbcc-11eb-865d-e807af041959.png" height="400" >
-
-<img width="800" alt="videoimage" src="https://user-images.githubusercontent.com/25509153/119248501-7ffde400-bbcc-11eb-89e9-da512aa03ad3.png" height="400" >
-
-
+## 기술 스택
+- UI: UIKit, Storyboard 
+- Location: MapKit, CLLocation
+- Video: AVFoundation
+  
+## 핵심 기능
+- 지도: 현위치 표시 및 출발지, 도착지 검색
+- 운전 경로: 추천 경로, 최단 경로, 최장 경로 제공
+- 비디오: 경로 안내 비디오 재생
+  
+## 주요 기술 및 담당 업무
+- AVFoundation을 사용한 비디오 출력
+- MapKit을 통한 경로 표시 및 커스텀 MKAnnotationView 사용
+- CoreLocation을 통한 사용자 권한 처리 및 현재 위치 출력
